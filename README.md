@@ -7,13 +7,30 @@ A simple React component that takes a string prop and renders it.
 You can install this package directly from GitHub:
 
 ```bash
+# Latest version
 npm install github:algomonk016/string-renderer
+
+# Specific version (recommended)
+npm install github:algomonk016/string-renderer#v1.0.1
+
+# Using yarn
+yarn add github:algomonk016/string-renderer#v1.0.1
 ```
 
-Or with yarn:
+### Version-Specific Installation
 
 ```bash
-yarn add github:algomonk016/string-renderer
+# Install specific tagged version
+npm install github:algomonk016/string-renderer#v1.0.1
+
+# Install from specific branch
+npm install github:algomonk016/string-renderer#main
+
+# Install from specific commit
+npm install github:algomonk016/string-renderer#59abb17
+
+# Install using semver range
+npm install github:algomonk016/string-renderer#semver:^1.0.0
 ```
 
 ## Usage
