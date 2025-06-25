@@ -1,6 +1,6 @@
 {
   "name": "react-string-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple React component that takes a string prop and renders it",
   "type": "module",
   "main": "dist/index.js",
