@@ -7,13 +7,13 @@ A simple React component that takes a string prop and renders it.
 You can install this package directly from GitHub:
 
 ```bash
-npm install github:yourusername/react-string-renderer
+npm install github:algomonk016/string-renderer
 ```
 
 Or with yarn:
 
 ```bash
-yarn add github:yourusername/react-string-renderer
+yarn add github:algomonk016/string-renderer
 ```
 
 ## Usage
@@ -59,8 +59,8 @@ To set up the project for development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/react-string-renderer.git
-cd react-string-renderer
+git clone https://github.com/algomonk016/string-renderer.git
+cd string-renderer
 
 # Install dependencies
 npm install

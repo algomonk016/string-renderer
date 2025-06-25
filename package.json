@@ -20,7 +20,7 @@
     "string",
     "renderer"
   ],
-  "author": "Your Name",
+  "author": "algomonk016",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -41,10 +41,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/react-string-renderer.git"
+    "url": "git+https://github.com/algomonk016/string-renderer.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-string-renderer/issues"
+    "url": "https://github.com/algomonk016/string-renderer/issues"
   },
-  "homepage": "https://github.com/yourusername/react-string-renderer#readme"
+  "homepage": "https://github.com/algomonk016/string-renderer#readme"
 } 
