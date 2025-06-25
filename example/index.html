@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React String Renderer Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .my-custom-class {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>React String Renderer Examples</h1>
+        <div id="root"></div>
+    </div>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        // This is a simplified example - in a real project you'd import the built component
+        const { createElement, useState } = React;
+        
+        // Simplified version of StringRenderer for demo
+        function StringRenderer({ text, className, style, as = 'span' }) {
+            return React.createElement(as, { className, style }, text);
+        }
+        
+        function App() {
+            return createElement('div', null,
+                createElement('h2', null, 'Basic Usage:'),
+                createElement(StringRenderer, { text: "Hello, World!" }),
+                
+                createElement('h2', null, 'With Custom Styling:'),
+                createElement(StringRenderer, { 
+                    text: "Styled text with gradient background", 
+                    className: "my-custom-class"
+                }),
+                
+                createElement('h2', null, 'Inline Styles:'),
+                createElement(StringRenderer, { 
+                    text: "Blue text with custom font size", 
+                    style: { color: 'blue', fontSize: '18px', fontWeight: 'bold' }
+                }),
+                
+                createElement('h2', null, 'Different HTML Elements:'),
+                createElement(StringRenderer, { 
+                    text: "This is rendered as an H1", 
+                    as: "h1",
+                    style: { color: '#333', marginBottom: '10px' }
+                }),
+                createElement(StringRenderer, { 
+                    text: "This is rendered as a paragraph", 
+                    as: "p",
+                    style: { color: '#666', lineHeight: '1.6' }
+                })
+            );
+        }
+        
+        ReactDOM.render(createElement(App), document.getElementById('root'));
+    </script>
+</body>
+</html> 

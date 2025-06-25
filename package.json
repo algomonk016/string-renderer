@@ -1,0 +1,50 @@
+{
+  "name": "react-string-renderer",
+  "version": "1.0.0",
+  "description": "A simple React component that takes a string prop and renders it",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "string",
+    "renderer"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.9.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/react-string-renderer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/react-string-renderer/issues"
+  },
+  "homepage": "https://github.com/yourusername/react-string-renderer#readme"
+} 
